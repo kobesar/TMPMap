@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Bar Chart</title>
+    <!-- Include D3 library -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        /* Add any additional styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .chart-container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        /* Add more styling as needed */
+    </style>
+</head>
+<body>
+
+<div class="chart-container">
+    <!-- Container for the chart -->
+    <svg id="bar-chart"></svg>
+</div>
+
+<script>
+    d3.csv("data/tm_map02062024v2.csv", function(data) {
+        console.log(data);
+    })
+</script>
+
+</body>
+</html>
